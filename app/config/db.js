@@ -1,10 +1,11 @@
 require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
+
 const sequelize = new Sequelize(
-    'serials',
+    'sapi',
     'postgres',
-    'Admin123@',
+    '123456',
     {
         host: 'localhost',
         port: 5432,

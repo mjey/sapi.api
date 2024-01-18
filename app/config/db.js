@@ -2,14 +2,14 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
 const sequelize = new Sequelize(
-    process.env.POSTGRESDB_DATABASE,
-    process.env.POSTGRESDB_USER,
-    process.env.POSTGRESDB_ROOT_PASSWORD,
+    'serials',
+    'postgres',
+    'Admin123@',
     {
         host: 'localhost',
-        port: process.env.POSTGRESDB_LOCAL_PORT,
+        port: 5432,
         dialect: 'postgres',
-        logging: false,
+        logging: true,
         pool: {
             max: 5,
             min: 0,
